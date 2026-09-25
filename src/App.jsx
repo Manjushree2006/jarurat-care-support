@@ -500,7 +500,9 @@ function App() {
 
                 <strong>AI Assistant</strong>
 
-                <p>{answer}</p>
+                <p style={{ whiteSpace: "pre-line" }}>
+                  {answer.replace(/\*\*/g, "")}
+                </p>
 
               </div>
             )}
